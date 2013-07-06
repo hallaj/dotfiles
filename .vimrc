@@ -23,7 +23,7 @@ syntax enable
 execute pathogen#infect()
 
 " syntastic (https://github.com/scrooloose/syntastic)
-let g:syntastic_python_checkers=['pyflakes']
+let g:syntastic_python_checkers=['flake8']
 let g:syntastic_check_on_wq=1
 
 " vim-solarized (https://github.com/altercation/vim-colors-solarized)

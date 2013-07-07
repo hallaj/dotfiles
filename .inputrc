@@ -1,0 +1,15 @@
+# Hallaj's .inputrc
+
+# history completion
+# example usage:
+# ssh <UP> | <DOWN>
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+
+# navigations
+# ctrl-<LEFT> moves one word left
+# ctrl-<RIGHT> moves one word right
+"\C-[OD": backward-word
+"\C-[OC": forward-word
+"\e\e[D": backward-word
+"\e\e[C": forward-word

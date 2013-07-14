@@ -26,9 +26,12 @@ execute pathogen#infect()
 let g:syntastic_python_checkers=['flake8']
 let g:syntastic_check_on_wq=1
 
+" snippets
+let g:snippets_dir = $HOME . "/.vim/snippets"
+
 " vim-solarized (https://github.com/altercation/vim-colors-solarized)
-let g:solarized_termcolors=256
 set background=dark
+let g:solarized_termcolors=256
 colorscheme solarized
 
 " devbox-dark-256 (https://github.com/vim-scripts/devbox-dark-256)

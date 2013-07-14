@@ -24,6 +24,7 @@ URxvt.internalBorder:   3
 URxvt.letterSpace:      -1
 URxvt.lineSpace:        0
 URxvt.loginShell:       true
+URxvt.perl-ext-common:  default,matcher,tabbed
 URxvt.pointerBlank:     true
 URxvt.saveLines:        50
 URxvt.scrollBar:        false

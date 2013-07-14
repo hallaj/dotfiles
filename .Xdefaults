@@ -22,6 +22,12 @@ URxvt.perl-ext-common:  default,tabbed,matcher
 URxvt.colorUL:          #4682B4
 URxvt.letterSpace:      -1
 
+! rxvt-unicode tabbed
+URxvt.tabbed.tabbar-fg: 0
+URxvt.tabbed.tabbar-bg: 0
+URxvt.tabbed.tab-fg:    0
+URxvt.tabbed.tab-bg:    8
+
 ! colorScheme
 *.background:           rgb:00/00/00
 *.foreground:           rgb:cf/cf/cf

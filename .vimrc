@@ -29,6 +29,11 @@ let g:syntastic_check_on_wq=1
 " snippets
 let g:snippets_dir = $HOME . "/.vim/snippets"
 
+" NERDTree
+" autoclose if NERDTree is the only one left
+" taken from https://github.com/scrooloose/nerdtree/issues/21#issuecomment-3348390
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
 " vim-solarized (https://github.com/altercation/vim-colors-solarized)
 set background=dark
 let g:solarized_termcolors=256

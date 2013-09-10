@@ -4,11 +4,18 @@
 " vim auto-commands
 autocmd BufWritePre * :%s/\s\+$//e
 
+" vim set filetypes
+au BufRead,BufNewFile *.tpl set filetype=html
+
+" vim auto add headers to new python files
+autocmd BufNewFile *.py so ~/.vim/headers/python
+
 " base configurations
 filetype indent plugin on
 
 set history=80
 set ignorecase
+set modeline
 set ruler
 set smartcase
 

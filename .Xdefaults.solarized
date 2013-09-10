@@ -21,6 +21,7 @@ URxvt.fading:           0
 URxvt.font:             xft:Monospace:size=8
 URxvt.geometry:         150x50
 URxvt.internalBorder:   3
+URxvt.intensityStyles:  false
 URxvt.letterSpace:      -1
 URxvt.lineSpace:        0
 URxvt.loginShell:       true

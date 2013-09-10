@@ -1,0 +1,16 @@
+# Hallaj's global gitignore
+
+# general
+*.log
+
+# python stuff
+*.pyc
+*.egg
+*.egg-info
+*.wsgi
+
+# my default python virtualenv path
+VE
+
+# temporary stuffs
+*.swp

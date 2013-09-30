@@ -33,8 +33,8 @@ execute pathogen#infect()
 let g:syntastic_python_checkers=['flake8']
 let g:syntastic_check_on_wq=1
 
-" snippets
-let g:snippets_dir = $HOME . "/.vim/snippets"
+" snippets (https://github.com/msanders/snipmate.vim)
+let g:snippets_dir = "~/.vim/snippets"
 
 " NERDTree
 " autoclose if NERDTree is the only one left

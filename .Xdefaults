@@ -14,8 +14,8 @@ URxvt.geometry:         150x50
 URxvt.buffered:         true
 URxvt.borderLess:       true
 URxvt.loginShell:       false
-URxvt.font:             xft:Monospace:size=8
-URxvt.boldFont:         xft:Monospace:size=8
+URxvt.font:             xft:Monospace:size=8:autohint=True
+URxvt.boldFont:         xft:Monospace:size=8:autohint=True
 URxvt.urlLauncher:      x-www-browser
 URxvt.underlineURLs:    true
 URxvt.perl-ext-common:  default,tabbed,matcher

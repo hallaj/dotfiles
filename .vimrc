@@ -36,7 +36,7 @@ let g:syntastic_check_on_wq=1
 " snippets (https://github.com/msanders/snipmate.vim)
 let g:snippets_dir = "~/.vim/snippets"
 
-" NERDTree
+" NERDTree (https://github.com/scrooloose/nerdtree)
 " autoclose if NERDTree is the only one left
 " taken from https://github.com/scrooloose/nerdtree/issues/21#issuecomment-3348390
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif

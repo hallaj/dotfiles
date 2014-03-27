@@ -13,3 +13,6 @@
 [submodule ".vim/bundle/devbox-dark-256"]
 	path = .vim/bundle/devbox-dark-256
 	url = https://github.com/vim-scripts/devbox-dark-256
+[submodule ".vim/bundle/vim-snippets"]
+	path = .vim/bundle/vim-snippets
+	url = https://github.com/honza/vim-snippets

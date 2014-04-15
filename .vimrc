@@ -16,6 +16,7 @@ filetype indent plugin on
 set history=80
 set ignorecase
 set modeline
+set nohlsearch
 set ruler
 set smartcase
 

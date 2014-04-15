@@ -1,4 +1,3 @@
-!
 ! Hallaj ~/.XDefaults
 
 ! rxvt-unicode
@@ -21,6 +20,7 @@ URxvt.underlineURLs:    true
 URxvt.perl-ext-common:  default,tabbed,matcher
 URxvt.colorUL:          #4682B4
 URxvt.letterSpace:      -1
+URXvt.urgentOnBell:     true
 
 ! rxvt-unicode tabbed
 URxvt.tabbed.tabbar-fg: 8

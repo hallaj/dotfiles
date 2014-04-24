@@ -3,7 +3,7 @@
 ! rxvt-unicode
 URxvt.iconFile:         /usr/share/icons/hicolor/scalable/apps/terminator.svg
 URxvt.termName:         rxvt-256color
-URxvt.background:       #2e3436
+URxvt.background:       #262626
 URxvt.depth:            32
 URxvt.scrollBar:        false
 URxvt.inheritPixmap:    false

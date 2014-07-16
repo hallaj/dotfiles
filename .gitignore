@@ -14,3 +14,8 @@ VE
 
 # temporary stuffs
 *.swp
+
+# buildout stuffs
+bin
+develop-eggs
+.installed.cfg

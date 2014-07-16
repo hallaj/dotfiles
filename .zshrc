@@ -44,4 +44,4 @@ PROMPT='%n@%m:%~: %% '
 RPROMPT='${vcs_info_msg_0_}'
 
 ## funtoo's keychain
-test -x $(which keychain 2>&1) && eval $(keychain --eval -Q -q id_dsa)
+test -x $(which keychain 2>&1) && eval $(keychain --quick --quiet id_dsa)

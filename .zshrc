@@ -6,10 +6,13 @@ HISTSIZE=1000
 SAVEHIST=1000
 
 ## autoload items
+autoload -U colors          # colors
 autoload -U compinit        # completion
 autoload -U promptinit      # prompts
+autoload -U vcs_info        # version control
 
 ## init items
+colors
 compinit
 promptinit
 
@@ -19,12 +22,26 @@ setopt autocd               # auto change directory, without using cd
 setopt autopushd            # pushd for every directory change
                             # list with dirs -v
                             # access via ~<number>
+setopt correctall           # enable correction on typos
 setopt hist_ignore_dups     # ignore duplicates from being saved into history
 setopt hist_ignore_space    # we're not recording stuffs that starts with space
+setopt promptsubst          # allows prompt substitution
 setopt pushdignoredups      # ignore duplicate directories being generated
                             # in pushd
 
-prompt elite                # use the existing elite prompt
+## precmd
+precmd() { vcs_info }
+
+## zstyle parameters
+zstyle ':vcs_info:*' enable
+zstyle ':vcs_info:*' check-for-changes true
+zstyle ':vcs_info:*' stagedstr '%F{green}✔%f'
+zstyle ':vcs_info:*' unstagedstr '%F{red}✘%f'
+zstyle ':vcs_info:*' formats ' :: %b@%r %c%u'
+zstyle ':vcs_info:*' actionformats ' - '
+
+PROMPT='[ %~ %${vcs_info_msg_0_} ] > '
+RPROMPT='[ %n@%l on %m ]'
 
 ## misc autoload applications
 if [ ! -x $(which keychain 2>&1) ]; then

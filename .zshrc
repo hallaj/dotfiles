@@ -6,28 +6,30 @@ HISTSIZE=1000
 SAVEHIST=1000
 
 ## autoload items
-autoload -U colors          # colors
-autoload -U compinit        # completion
-autoload -U promptinit      # prompts
-autoload -U vcs_info        # version control
+autoload -U colors              # colors
+autoload -U compinit            # completion
+autoload -U promptinit          # prompts
+autoload -U select-word-style   # changes the select way word keymap
+autoload -U vcs_info            # version control
 
 ## init items
 colors
 compinit
 promptinit
+select-word-style bash          # I still enjoy using Alt+Backspace for deleting words from /path/separators
 
 ## set options
-setopt appendhistory        # append history instead of replacing them
-setopt autocd               # auto change directory, without using cd
-setopt autopushd            # pushd for every directory change
-                            # list with dirs -v
-                            # access via ~<number>
-setopt correctall           # enable correction on typos
-setopt hist_ignore_dups     # ignore duplicates from being saved into history
-setopt hist_ignore_space    # we're not recording stuffs that starts with space
-setopt promptsubst          # allows prompt substitution
-setopt pushdignoredups      # ignore duplicate directories being generated
-                            # in pushd
+setopt appendhistory            # append history instead of replacing them
+setopt autocd                   # auto change directory, without using cd
+setopt autopushd                # pushd for every directory change
+                                # list with dirs -v
+                                # access via ~<number>
+setopt correctall               # enable correction on typos
+setopt hist_ignore_dups         # ignore duplicates from being saved into history
+setopt hist_ignore_space        # we're not recording stuffs that starts with space
+setopt promptsubst              # allows prompt substitution
+setopt pushdignoredups          # ignore duplicate directories being generated
+                                # in pushd
 
 ## precmd
 precmd() { vcs_info }

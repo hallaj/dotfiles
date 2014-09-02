@@ -16,7 +16,8 @@ autoload -U vcs_info            # version control
 colors
 compinit
 promptinit
-select-word-style bash          # I still enjoy using Alt+Backspace for deleting words from /path/separators
+select-word-style bash          # I still enjoy using Alt+Backspace for
+                                # deleting words from /path/separators
 
 ## set options
 setopt appendhistory            # append history instead of replacing them
@@ -25,8 +26,10 @@ setopt autopushd                # pushd for every directory change
                                 # list with dirs -v
                                 # access via ~<number>
 setopt correctall               # enable correction on typos
-setopt hist_ignore_dups         # ignore duplicates from being saved into history
-setopt hist_ignore_space        # we're not recording stuffs that starts with space
+setopt hist_ignore_dups         # ignore duplicates from being saved into
+                                # history
+setopt hist_ignore_space        # we're not recording stuffs that starts with
+                                # space
 setopt promptsubst              # allows prompt substitution
 setopt pushdignoredups          # ignore duplicate directories being generated
                                 # in pushd

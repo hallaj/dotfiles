@@ -30,6 +30,9 @@ setopt histignoredups           # ignore duplicates from being saved into
                                 # history
 setopt histignorespace          # we're not recording stuffs that starts with
                                 # space
+setopt nonomatch                # disables stopping on failed globbing
+                                # I need this for `git reset --soft HEAD^`
+                                # since I'm lazy to escape it
 setopt promptsubst              # allows prompt substitution
 setopt pushdignoredups          # ignore duplicate directories being generated
                                 # in pushd

@@ -33,6 +33,7 @@ setopt histignorespace          # we're not recording stuffs that starts with
 setopt promptsubst              # allows prompt substitution
 setopt pushdignoredups          # ignore duplicate directories being generated
                                 # in pushd
+setopt sharehistory             # share history between sessions
 
 ## precmd
 precmd() { vcs_info }

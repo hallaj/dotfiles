@@ -39,8 +39,10 @@ setopt pushdignoredups          # ignore duplicate directories being generated
 setopt sharehistory             # share history between sessions
 
 ## keybinding
-bindkey "^[[A" history-beginning-search-backward
-bindkey "^[[B" history-beginning-search-forward
+bindkey "^[[A"  history-beginning-search-backward
+bindkey "^[[B"  history-beginning-search-forward
+bindkey "^[[1~" beginning-of-line
+bindkey "^[[4~" end-of-line
 
 ## precmd
 precmd() { vcs_info }

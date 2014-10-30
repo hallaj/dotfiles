@@ -41,17 +41,19 @@ let g:snippets_dir = "~/.vim/bundle/vim-snippets/snippets"
 " autoclose if NERDTree is the only one left
 " taken from https://github.com/scrooloose/nerdtree/issues/21#issuecomment-3348390
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+" remove extensions from NERDTree
+let NERDTreeIgnore = ['\.pyc$', '__pycache__']
 
 " vim-solarized (https://github.com/altercation/vim-colors-solarized)
-"set background=dark
-"let g:solarized_termcolors=256
-"colorscheme solarized
+set background=dark
+let g:solarized_termcolors=256
+colorscheme solarized
 
 " devbox-dark-256 (https://github.com/vim-scripts/devbox-dark-256)
-"set t_Co=256
-"set background=dark
-"colorscheme devbox-dark-256
+" set t_Co=256
+" set background=dark
+" colorscheme devbox-dark-256
 
 " vim-lucius (https://github.com/jonathanfilip/vim-lucius)
-colorscheme lucius
-LuciusDarkLowContrast
+" colorscheme lucius
+" LuciusDarkLowContrast

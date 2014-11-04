@@ -28,6 +28,7 @@ set softtabstop=4
 syntax enable
 
 " I'm using pathogen, so what?
+runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 
 " syntastic (https://github.com/scrooloose/syntastic)

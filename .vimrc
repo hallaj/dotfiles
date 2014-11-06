@@ -7,9 +7,6 @@ autocmd BufWritePre * :%s/\s\+$//e
 " vim set filetypes
 au BufRead,BufNewFile *.tpl set filetype=html
 
-" vim auto add headers to new python files
-autocmd BufNewFile *.py so ~/.vim/headers/python
-
 " base configurations
 filetype indent plugin on
 

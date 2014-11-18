@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+  <menu id="root-menu" label="Openbox 3">
+    <separator label="Openbox" />
+
+    <menu id="applications-menu" label="Applications" execute="/usr/libexec/openbox-xdg-menu applications"/>
+    <menu id="preferences-menu" label="Preferences" execute="/usr/libexec/openbox-xdg-menu preferences"/>
+    <menu id="administration-menu" label="Administration" execute="/usr/libexec/openbox-xdg-menu system-settings"/>
+
+    <separator />
+
+    <menu id="screenshot" label="Screenshot">
+      <item label="Select Region">
+        <action name="Execute">
+          <execute>scrot -s</execute>
+        </action>
+      </item>
+    </menu>
+
+    <separator />
+
+    <item label="Reconfigure">
+      <action name="Reconfigure" />
+    </item>
+
+    <separator />
+
+    <item label="Log Out">
+      <action name="SessionLogout">
+        <prompt>yes</prompt>
+      </action>
+    </item>
+  </menu>
+</openbox_menu>

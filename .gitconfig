@@ -2,18 +2,27 @@
     name = Muhammad Hallaj Subery
     email = hallajs@gmail.com
 
+[alias]
+
 [color]
     branch = auto
     status = auto
     interactive = auto
     diff = auto
+    ui = auto
 
 [core]
+    compression = 5
     editor = vim
-    excludesfile = ~/.gitignore
+    excludefile = .gitignore
 
 [push]
     default = simple
 
 [svn]
     rmdir = true
+
+[status]
+    short = false
+    branch = true
+    relativePaths = true

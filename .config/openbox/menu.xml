@@ -20,9 +20,11 @@
 
     <separator />
 
-    <item label="Reconfigure">
-      <action name="Reconfigure" />
-    </item>
+    <menu id="system" label="System">
+      <item label="Reconfigure">
+        <action name="Reconfigure" />
+      </item>
+    </menu>
 
     <separator />
 

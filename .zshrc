@@ -6,11 +6,15 @@ HISTSIZE=1000
 SAVEHIST=1000
 
 ## autoload items
-autoload -U colors              # colors
-autoload -U compinit            # completion
-autoload -U promptinit          # prompts
-autoload -U select-word-style   # changes the select way word keymap
-autoload -U vcs_info            # version control
+autoload -U colors                          # colors
+autoload -U compinit                        # completion
+autoload -U promptinit                      # prompts
+autoload -U select-word-style               # changes the select way word keymap
+autoload -U vcs_info                        # version control
+autoload -U up-line-or-beginning-search     # history completion c<up> to complete \
+                                            # history that starts with the letter c
+autoload -U down-line-or-beginning-search   # history completion c<down> to complete \
+                                            # history that starts with the letter c
 
 ## init items
 colors
@@ -38,9 +42,13 @@ setopt pushdignoredups          # ignore duplicate directories being generated
                                 # in pushd
 setopt sharehistory             # share history between sessions
 
+## ZLE
+zle -N up-line-or-beginning-search    # Move cursor back to the end of the line in history
+zle -N down-line-or-beginning-search  # Move cursor back to the end of the line in history
+
 ## keybinding
-bindkey "^[[A"  history-beginning-search-backward
-bindkey "^[[B"  history-beginning-search-forward
+bindkey "^[[A"  up-line-or-beginning-search
+bindkey "^[[B"  down-line-or-beginning-search
 bindkey "^[[1~" beginning-of-line
 bindkey "^[[4~" end-of-line
 

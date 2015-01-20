@@ -19,8 +19,8 @@ set smartcase
 
 " use 4 spaces to replace tabs by default
 set expandtab
-set shiftwidth=4
-set softtabstop=4
+set shiftwidth=2
+set softtabstop=2
 
 syntax enable
 

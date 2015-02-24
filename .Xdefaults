@@ -1,5 +1,13 @@
 ! Hallaj ~/.XDefaults
 
+! Xft
+Xft.antialias:          true
+Xft.autohint:           false
+Xft.dpi:                96
+Xft.hinting:            true
+Xft.hintstyle:          hintslight
+Xft.rgba:               rgb
+
 ! rxvt-unicode
 URxvt.iconFile:         /usr/share/icons/hicolor/scalable/apps/terminator.svg
 URxvt.termName:         rxvt-256color
@@ -13,13 +21,13 @@ URxvt.geometry:         150x50
 URxvt.buffered:         true
 URxvt.borderLess:       true
 URxvt.loginShell:       false
-URxvt.font:             xft:Monospace:size=8:autohint=True
-URxvt.boldFont:         xft:Monospace:size=8:autohint=True
+URxvt.font:             xft:Inconsolata:size=8:antialias=true:hinting=true
+URxvt.boldFont:         xft:Inconsolata:size=8:antialias=true:hinting=true
 URxvt.urlLauncher:      x-www-browser
 URxvt.underlineURLs:    true
 URxvt.perl-ext-common:  default,tabbed,matcher
 URxvt.colorUL:          #4682B4
-URxvt.letterSpace:      -1
+URxvt.letterSpace:      -2
 URXvt.urgentOnBell:     true
 
 ! rxvt-unicode tabbed

@@ -91,7 +91,7 @@ tooltip_padding = 2 2
 tooltip_show_timeout = 0.7
 tooltip_hide_timeout = 0.3
 tooltip_background_id = 1
-tooltip_font = sans 10
+tooltip_font = sans 8
 tooltip_font_color = #CCCCCC 80
 
 # Mouse

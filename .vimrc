@@ -7,6 +7,9 @@ autocmd BufWritePre * :%s/\s\+$//e
 " vim set filetypes
 au BufRead,BufNewFile *.tpl set filetype=html
 
+" commands
+command! SudoSave execute ":w !sudo tee %<CR>"
+
 " base configurations
 filetype indent plugin on
 

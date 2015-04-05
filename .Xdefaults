@@ -27,7 +27,7 @@ URxvt.urlLauncher:      x-www-browser
 URxvt.underlineURLs:    true
 URxvt.perl-ext-common:  default,tabbed,matcher
 URxvt.colorUL:          #4682B4
-URxvt.letterSpace:      -1
+URxvt.letterSpace:      0
 URXvt.urgentOnBell:     true
 
 ! rxvt-unicode tabbed

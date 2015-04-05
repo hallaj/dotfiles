@@ -29,7 +29,6 @@ setopt autocd                   # auto change directory, without using cd
 setopt autopushd                # pushd for every directory change
                                 # list with dirs -v
                                 # access via ~<number>
-setopt correctall               # enable correction on typos
 setopt histignoredups           # ignore duplicates from being saved into
                                 # history
 setopt histignorespace          # we're not recording stuffs that starts with

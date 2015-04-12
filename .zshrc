@@ -68,8 +68,12 @@ PROMPT='[ %~ %${vcs_info_msg_0_} ] > '
 RPROMPT='[ %n@%l on %m ]'
 
 ## misc autoload applications
-if [ ! -x $(which keychain 2>&1) ]; then
-    echo "Missing keychain!"
-else
-    eval $(keychain --quick --quiet id_dsa)
+if which keychain &>/dev/null; then
+  eval $(keychain --quick --quiet id_dsa)
+fi
+
+if which tmux &>/dev/null; then
+  if [ -z "$TMUX" ]; then
+    tmux new-session
+  fi
 fi

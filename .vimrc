@@ -15,6 +15,7 @@ filetype indent plugin on
 
 set history=80
 set ignorecase
+set laststatus=2
 set modeline
 set nohlsearch
 set ruler

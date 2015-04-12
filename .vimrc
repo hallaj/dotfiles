@@ -39,6 +39,9 @@ let g:syntastic_check_on_wq=1
 " snippets https://github.com/honza/vim-snippets for (https://github.com/msanders/snipmate.vim)
 let g:snippets_dir = "~/.vim/bundle/vim-snippets/snippets"
 
+" vim-airline theme
+let g:airline_theme="zenburn"
+
 " NERDTree (https://github.com/scrooloose/nerdtree)
 " autoclose if NERDTree is the only one left
 " taken from https://github.com/scrooloose/nerdtree/issues/21#issuecomment-3348390

@@ -28,6 +28,12 @@
 
     <separator />
 
+    <item label="Lock">
+      <action name="Execute">
+        <execute>xscreensaver-command -lock</execute>
+      </action>
+    </item>
+
     <item label="Log Out">
       <action name="SessionLogout">
         <prompt>yes</prompt>

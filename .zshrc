@@ -2,8 +2,8 @@
 
 ## variables
 HISTFILE=~/.history
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=10000
+SAVEHIST=10000
 
 ## autoload items
 autoload -U colors                          # colors

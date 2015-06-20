@@ -25,7 +25,7 @@ URxvt.font:             xft:Inconsolata:size=8:antialias=true:hinting=true
 URxvt.boldFont:         xft:Inconsolata:size=8:antialias=true:hinting=true
 URxvt.urlLauncher:      x-www-browser
 URxvt.underlineURLs:    true
-URxvt.perl-ext-common:  default,tabbed,matcher
+URxvt.perl-ext-common:  default,matcher,selection-to-clipboard,tabbed
 URxvt.colorUL:          #4682B4
 URxvt.letterSpace:      0
 URXvt.urgentOnBell:     true

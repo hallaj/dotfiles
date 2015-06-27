@@ -11,7 +11,7 @@ Xft.rgba:               rgb
 ! rxvt-unicode
 URxvt.iconFile:         /usr/share/icons/hicolor/scalable/apps/terminator.svg
 URxvt.termName:         rxvt-256color
-URxvt.background:       #262626
+URxvt.background:       [95]#262626
 URxvt.depth:            32
 URxvt.scrollBar:        false
 URxvt.inheritPixmap:    false

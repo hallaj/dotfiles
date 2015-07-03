@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # openbox autostart
 
-AUTOSTART=(clipit pulseaudio tint2 volumeicon xcompmgr xscreensaver)
+AUTOSTART=(clipit pulseaudio tint2 xcompmgr xscreensaver)
 
 for APP in ${AUTOSTART[@]}; do
   if $(which ${APP} >/dev/null 2>&1); then

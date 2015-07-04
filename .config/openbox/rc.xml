@@ -97,7 +97,7 @@
       <action name="ToggleShowDesktop" />
     </keybind>
 
-    <keybind key="C-f">
+    <keybind key="C-A-f">
       <action name="ToggleMaximizeFull" />
     </keybind>
 

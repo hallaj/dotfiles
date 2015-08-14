@@ -33,7 +33,7 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 
 " syntastic (https://github.com/scrooloose/syntastic)
-let g:syntastic_python_checkers=['flake8']
+let g:syntastic_python_checkers=['flake8', 'flake8-python2']
 let g:syntastic_check_on_wq=1
 
 " snippets https://github.com/honza/vim-snippets for (https://github.com/msanders/snipmate.vim)

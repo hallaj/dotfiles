@@ -77,3 +77,7 @@ if which tmux &>/dev/null; then
     tmux new-session
   fi
 fi
+
+## aliases
+alias grep='grep --color=auto'
+alias ls='ls --color=auto'

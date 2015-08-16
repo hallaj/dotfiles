@@ -116,6 +116,23 @@
         </action>
       </keybind>
     </keybind>
+
+    <keybind key="W-w">
+      <keybind key="n">
+        <action name="GoToDesktop">
+          <to>next</to>
+        </action>
+      </keybind>
+    </keybind>
+
+    <keybind key="W-w">
+      <keybind key="p">
+        <action name="GoToDesktop">
+          <to>previous</to>
+        </action>
+      </keybind>
+    </keybind>
+
   </keyboard>
 
   <mouse>

@@ -69,7 +69,7 @@ RPROMPT='[ %n@%l on %m ]'
 
 ## misc autoload applications
 if which keychain &>/dev/null; then
-  eval $(keychain --quick --quiet id_dsa)
+  eval $(keychain --quick --quiet id_dsa id_rsa)
 fi
 
 if which tmux &>/dev/null; then
@@ -77,6 +77,9 @@ if which tmux &>/dev/null; then
     tmux new-session
   fi
 fi
+
+## exports
+export TERM="xterm"
 
 ## aliases
 alias grep='grep --color=auto'

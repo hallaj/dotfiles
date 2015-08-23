@@ -79,7 +79,7 @@ if which tmux &>/dev/null; then
 fi
 
 ## exports
-export TERM="xterm"
+export TERM="screen-256color"
 
 ## aliases
 alias grep='grep --color=auto'

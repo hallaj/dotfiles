@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # openbox autostart
 
+# autostart applications
 AUTOSTART=(clipit pulseaudio tint2 xcompmgr xscreensaver)
 
 for APP in ${AUTOSTART[@]}; do
@@ -8,3 +9,6 @@ for APP in ${AUTOSTART[@]}; do
     ${APP} &
   fi
 done
+
+# configurations
+xset b off

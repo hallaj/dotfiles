@@ -97,6 +97,12 @@
       <action name="ToggleShowDesktop" />
     </keybind>
 
+    <keybind key="W-l">
+      <action name="Execute">
+        <command>xscreensaver-command -lock</command>
+      </action>
+    </keybind>
+
     <keybind key="C-A-f">
       <action name="ToggleMaximizeFull" />
     </keybind>

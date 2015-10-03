@@ -68,7 +68,10 @@ PROMPT='[ %~ %${vcs_info_msg_0_} ] > '
 RPROMPT='[ %n@%l on %m ]'
 
 ## misc autoload applications
-if which keychain &>/dev/null; then
+if which envoy &>/dev/null; then
+  envoy -t ssh-agent
+  source <(envoy -p)
+elif which keychain &>/dev/null; then
   eval $(keychain --quick --quiet id_dsa id_rsa)
 fi
 

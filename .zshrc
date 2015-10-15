@@ -61,7 +61,7 @@ zstyle ':vcs_info:*' enable
 zstyle ':vcs_info:*' check-for-changes true
 zstyle ':vcs_info:*' stagedstr '%F{green}✔%f'
 zstyle ':vcs_info:*' unstagedstr '%F{red}✘%f'
-zstyle ':vcs_info:*' formats ' :: %b@%r %c%u'
+zstyle ':vcs_info:*' formats ' :: %b - %r %c%u'
 zstyle ':vcs_info:*' actionformats ' - '
 
 PROMPT='[ %~ %${vcs_info_msg_0_} ] > '

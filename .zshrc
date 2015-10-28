@@ -50,7 +50,9 @@ zle -N down-line-or-beginning-search  # Move cursor back to the end of the line 
 bindkey "^[[A"  up-line-or-beginning-search
 bindkey "^[[B"  down-line-or-beginning-search
 bindkey "^[[1~" beginning-of-line
+bindkey "^[[7~" beginning-of-line
 bindkey "^[[4~" end-of-line
+bindkey "^[[8~" end-of-line
 bindkey "^[[3~" delete-char
 
 ## precmd
@@ -87,3 +89,4 @@ export TERM="screen-256color"
 ## aliases
 alias grep='grep --color=auto'
 alias ls='ls --color=auto'
+alias view='vim -R'

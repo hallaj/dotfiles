@@ -45,7 +45,7 @@ let g:airline_theme="zenburn"
 " NERDTree (https://github.com/scrooloose/nerdtree)
 " autoclose if NERDTree is the only one left
 " taken from https://github.com/scrooloose/nerdtree/issues/21#issuecomment-3348390
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " remove extensions from NERDTree
 let NERDTreeIgnore = ['\.pyc$', '__pycache__']
 

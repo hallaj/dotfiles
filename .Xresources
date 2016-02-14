@@ -1,7 +1,7 @@
-! Hallaj ~/.XDefaults
+! Hallaj ~/.Xresources
 
 ! Xft
-Xft.antialias:          false
+Xft.antialias:          true
 Xft.autohint:           false
 Xft.dpi:                96
 Xft.hinting:            true

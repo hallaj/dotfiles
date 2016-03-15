@@ -41,6 +41,7 @@ let g:snippets_dir = "~/.vim/bundle/vim-snippets/snippets"
 
 " vim-airline theme
 let g:airline_theme="zenburn"
+let g:airline_powerline_fonts=1
 
 " NERDTree (https://github.com/scrooloose/nerdtree)
 " autoclose if NERDTree is the only one left

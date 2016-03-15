@@ -89,7 +89,7 @@
 
     <keybind key="C-A-t">
       <action name="Execute">
-        <command>urxvt256c</command>
+        <command>urxvt256c-ml</command>
       </action>
     </keybind>
 

@@ -21,7 +21,7 @@
 	url = https://github.com/jonathanfilip/vim-lucius
 [submodule ".vim/bundle/vim-puppet"]
 	path = .vim/bundle/vim-puppet
-	url = git://github.com/rodjek/vim-puppet.git
+	url = https://github.com/puppetlabs/puppet-syntax-vim.git
 [submodule ".vim/bundle/vim-ruby"]
 	path = .vim/bundle/vim-ruby
 	url = https://github.com/vim-ruby/vim-ruby

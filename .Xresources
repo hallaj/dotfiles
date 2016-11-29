@@ -39,4 +39,7 @@ URxvt.tabbed.tab-bg:    0
 
 ! includes
 !#include ".Xresources.d/solarized-dark"
-#include ".Xresources.d/solarized-light"
+!#include ".Xresources.d/solarized-light"
+#include ".Xresources.d/zenburn"
+!#include ".Xresources.d/base16-monokai-256"
+!#include ".Xresources.d/base16-grayscale-dark-256"

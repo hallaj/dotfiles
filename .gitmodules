@@ -46,3 +46,6 @@
 [submodule ".tmux/plugins/tmux-sensible"]
 	path = .tmux/plugins/tmux-sensible
 	url = https://github.com/tmux-plugins/tmux-sensible
+[submodule ".tmux/plugins/tmux-sidebar"]
+	path = .tmux/plugins/tmux-sidebar
+	url = https://github.com/tmux-plugins/tmux-sidebar

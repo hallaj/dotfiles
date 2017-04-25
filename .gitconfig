@@ -15,6 +15,7 @@
     compression = 5
     editor = vim
     excludesfile = ~/.gitignore
+    trustctime = false
 
 [push]
     default = simple

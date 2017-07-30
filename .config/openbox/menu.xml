@@ -30,7 +30,7 @@
 
     <item label="Lock">
       <action name="Execute">
-        <execute>xscreensaver-command -lock</execute>
+        <execute>dm-tool lock</execute>
       </action>
     </item>
 

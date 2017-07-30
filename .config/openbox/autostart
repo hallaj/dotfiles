@@ -2,7 +2,7 @@
 # openbox autostart
 
 # autostart applications
-AUTOSTART=(clipit pulseaudio tint2 xcompmgr xscreensaver)
+AUTOSTART=(clipit pulseaudio tint2 xcompmgr)
 
 for APP in ${AUTOSTART[@]}; do
   if $(which ${APP} >/dev/null 2>&1); then

@@ -67,9 +67,6 @@ zstyle ':vcs_info:*' unstagedstr '%F{red}✘%f'
 zstyle ':vcs_info:*' formats ' :: %b - %r %c%u'
 zstyle ':vcs_info:*' actionformats ' - '
 
-PROMPT='[ %~ %${vcs_info_msg_0_} ] > '
-RPROMPT='[ %n@%l on %m ]'
-
 ## misc autoload applications
 if which envoy &>/dev/null; then
   envoy -t ssh-agent
@@ -91,3 +88,11 @@ export TERM="screen-256color"
 alias grep='grep --color=auto'
 alias ls='ls --color=auto'
 alias view='vim -R'
+
+## init oh-my-zsh
+source ~/.oh-my-zsh/templates/zshrc.zsh-template
+
+## customize zshrc
+ZSH_THEME="awesomepanda"
+DISABLE_AUTO_TITLE="true"
+DISABLE_UNTRACKED_FILES_DIRTY="true"

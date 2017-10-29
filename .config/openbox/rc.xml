@@ -139,6 +139,17 @@
       </keybind>
     </keybind>
 
+    <keybind key="XF86MonBrightnessUp">
+      <action name="Execute">
+        <command>brightnessctl s +5%</command>
+      </action>
+    </keybind>
+
+    <keybind key="XF86MonBrightnessDown">
+      <action name="Execute">
+        <command>brightnessctl s 5%-</command>
+      </action>
+    </keybind>
   </keyboard>
 
   <mouse>

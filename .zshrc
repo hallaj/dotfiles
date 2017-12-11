@@ -2,8 +2,8 @@
 
 ## variables
 HISTFILE=~/.history
-HISTSIZE=10000
-SAVEHIST=10000
+HISTSIZE=100000
+SAVEHIST=100000
 
 ## autoload items
 autoload -U colors                          # colors
@@ -96,3 +96,10 @@ source ~/.oh-my-zsh/templates/zshrc.zsh-template
 ZSH_THEME="awesomepanda"
 DISABLE_AUTO_TITLE="true"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+## autoload .zshrc.d files
+if [ -d "$HOME/.zshrc.d" ]; then
+  for file in $HOME/.zshrc.d/*.sh; do
+    source $file
+  done
+fi

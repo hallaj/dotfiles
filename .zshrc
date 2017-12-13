@@ -67,20 +67,6 @@ zstyle ':vcs_info:*' unstagedstr '%F{red}✘%f'
 zstyle ':vcs_info:*' formats ' :: %b - %r %c%u'
 zstyle ':vcs_info:*' actionformats ' - '
 
-## misc autoload applications
-if which envoy &>/dev/null; then
-  envoy -t ssh-agent
-  source <(envoy -p)
-elif which keychain &>/dev/null; then
-  eval $(keychain --quick --quiet id_rsa)
-fi
-
-if which tmux &>/dev/null; then
-  if [ -z "$TMUX" ]; then
-    tmux new-session
-  fi
-fi
-
 ## exports
 export TERM="screen-256color"
 
@@ -88,14 +74,6 @@ export TERM="screen-256color"
 alias grep='grep --color=auto'
 alias ls='ls --color=auto'
 alias view='vim -R'
-
-## init oh-my-zsh
-source ~/.oh-my-zsh/templates/zshrc.zsh-template
-
-## customize zshrc
-ZSH_THEME="awesomepanda"
-DISABLE_AUTO_TITLE="true"
-DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 ## autoload .zshrc.d files
 if [ -d "$HOME/.zshrc.d" ]; then

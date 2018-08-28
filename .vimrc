@@ -21,7 +21,7 @@ set nohlsearch
 set ruler
 set smartcase
 
-" use 4 spaces to replace tabs by default
+" use 2 spaces to replace tabs by default
 set expandtab
 set shiftwidth=2
 set softtabstop=2
